@@ -7,10 +7,10 @@ from data.headers import headers
 from grab import Grab
 from bs4 import BeautifulSoup
 
-debug_url = 1  # 0 - в отчет не попадает URL, 1 - попадает
+debug_url = 0  # 0 - в отчет не попадает URL, 1 - попадает
 count = 0
 start = time.time()
-report_file_name = f'report/data_avito_{datetime.datetime.now().strftime("%Y.%m.%d")}.csv'
+report_file_name = f'report/data_avito_{datetime.datetime.now().strftime("%Y.%m.%d.%H.%M")}.csv'
 temp_file = 'report/temp_file.html'
 
 # Создаём список производителей
